@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yq.news.activity.AccountListActivity">
+
+    <include
+        layout="@layout/top_toolbar_left"
+        />
+    <include
+        layout="@layout/fragment_smart_refresh_divider"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <include layout="@layout/empty_news_view"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</RelativeLayout>

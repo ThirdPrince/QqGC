@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="?selectableItemBackground"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_marginRight="@dimen/dimen_12dp"
+         android:paddingLeft="@dimen/dimen_12dp"
+        android:paddingRight="@dimen/dimen_12dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/task_bg"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="香港暴乱"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/m_font_color_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/MainPageTV"
+            android:text="任务开始时间"
+            />
+
+
+            <TextView
+                android:id="@+id/time_start_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                style="@style/MainPageTV_Time"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/MainPageTV"
+            android:text="任务结束时间"
+            />
+
+        <TextView
+            android:id="@+id/time_end_tv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_height="wrap_content"
+            style="@style/MainPageTV_Time"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/MainPageTV"
+            android:text="已反馈/总人数"
+            />
+
+        <TextView
+            android:id="@+id/feed_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            style="@style/MainPageTV_Time"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

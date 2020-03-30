@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/empty_lay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="gone"
+    android:gravity="top"
+    android:orientation="vertical">
+
+  <mehdi.sakout.fancybuttons.FancyButton
+      android:id="@+id/feed_button"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      app:fb_textSize = "16sp"
+      android:layout_margin="12dp"
+      android:paddingLeft="20dp"
+      android:paddingTop="10dp"
+      android:paddingRight="20dp"
+      android:paddingBottom="10dp"
+      app:fb_borderColor="@color/white"
+      android:background="@drawable/round_btn"
+      app:fb_borderWidth="1dp"
+      app:fb_defaultColor="@color/binding"
+      app:fb_focusColor="@color/binding"
+      app:fb_iconPosition="left"
+      app:fb_radius="5dp"
+      app:fb_text="去反馈"
+      app:fb_textColor="@color/white" />
+</LinearLayout>

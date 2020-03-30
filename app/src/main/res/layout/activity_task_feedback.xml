@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".activity.TaskFeedbackActivity">
+
+    <include
+        layout="@layout/top_toolbar_left"
+        />
+
+    <RelativeLayout
+        android:id="@+id/account_type_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minWidth="80dp"
+            android:text="@string/account_type"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/account_type_tv"
+                android:layout_width="match_parent"
+                android:layout_height="47.5dp"
+                android:layout_alignParentRight="true"
+                android:gravity="end|center_vertical"
+
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:paddingRight="13dip"
+                android:textColor="@color/black"
+                android:textColorHint="@color/m_grey_bgcolor_light"
+                android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_id_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingLeft="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minWidth="80dp"
+            android:text="@string/account_id"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/account_id"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="end|center_vertical"
+            android:drawableRight="@drawable/arrow"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:paddingRight="13dip"
+            android:textColor="@color/black"
+            android:textColorHint="@color/m_grey_bgcolor_light"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/account_nick_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:minWidth="80dp"
+            android:text="@string/account_nick"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/account_nick_tv"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="end|center_vertical"
+            android:drawableRight="@drawable/arrow"
+            android:drawablePadding="@dimen/dimen_5dp"
+            android:paddingRight="13dip"
+            android:textColor="@color/black"
+            android:textColorHint="@color/m_grey_bgcolor_light"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/pic_add_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add2"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:fb_textSize = "16sp"
+        android:layout_margin="12dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:fb_borderColor="@color/white"
+        android:background="@drawable/round_btn"
+        app:fb_borderWidth="1dp"
+        app:fb_defaultColor="@color/binding"
+        app:fb_focusColor="@color/binding"
+        app:fb_iconPosition="left"
+        app:fb_radius="5dp"
+        app:fb_text="提交"
+        app:fb_textColor="@color/white" />
+
+</LinearLayout>

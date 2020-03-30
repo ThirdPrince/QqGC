@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppTheme" parent="Base.AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!--<style name="TaskAppTheme" parent="Base.AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>-->
+    
+</resources>

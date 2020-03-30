@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/AppTheme"
+    android:background="@drawable/topbar_gradient_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <RelativeLayout
+            android:id="@+id/back_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            >
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dk_back"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackground"
+                android:scaleType="center"
+                />
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_back"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:text="title"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/toolbar_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/toolbar_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/toolbar_add"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:background="@color/m_divider_line_color"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
+
+

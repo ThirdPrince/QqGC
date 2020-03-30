@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/tools">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                android:background="@color/white"
+                >
+
+                <include layout="@layout/top_toolbar_left" />
+
+                 <include   layout="@layout/task_info_top"/>
+            </LinearLayout>
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/sliding_tab"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                app:tl_indicator_color="@color/blue"
+                app:tl_indicator_height="3dp"
+                app:tl_indicator_margin_left="2dp"
+                app:tl_indicator_width="40dp"
+                app:tl_indicator_margin_right="2dp"
+                app:tl_tab_padding="10dp"
+                app:tl_textSelectColor="#FF63B8FF"
+                app:tl_textUnselectColor="@android:color/black"
+                app:tl_textsize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sp_16"
+        android:onClick="onClickFab"
+        android:src="@mipmap/ic_toolbar_add"
+        app:backgroundTint="@color/fab_ripple"
+        app:layout_anchor="@id/content_vp"
+        app:layout_anchorGravity="bottom|right|end" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+

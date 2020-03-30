@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/dimen_12dp"
+    android:layout_marginRight="@dimen/dimen_12dp"
+     android:gravity="center_vertical"
+    android:paddingTop="@dimen/dimen_5dp"
+    android:paddingBottom="@dimen/dimen_5dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/touxiang"
+        android:scaleType="centerCrop"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/no_feed_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:text="反馈人"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/no_feed_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+
+            android:maxLines="1"
+            android:text="时间"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/dimen_10dp"
+        >
+        <ImageView
+            android:id="@+id/no_feed_phone_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/phone"
+            />
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dip"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/m_divider_line_color"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="@dimen/dp_45"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dimen_10dp"
+    tools:context="com.yq.news.activity.SearchActivity">
+
+
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/sousuo"
+            android:background="@drawable/search_top_round"
+            android:layout_marginRight="@dimen/dimen_12dp"
+            android:layout_height="30dp">
+            </TextView>
+
+
+    <TextView
+        android:id="@+id/msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:drawableTop="@drawable/msg_icon"
+        android:paddingTop="5dp"
+        android:text="消息"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</LinearLayout>

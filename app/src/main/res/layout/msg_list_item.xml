@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dimen_12dp"
+    android:layout_marginRight="@dimen/dimen_12dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/msg_time_tv"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_999"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/task_bg"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:padding="@dimen/dimen_10dp"
+
+        >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/msg_title"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="22sp"
+            android:text="新任务"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            >
+            <TextView
+                android:id="@+id/msg_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

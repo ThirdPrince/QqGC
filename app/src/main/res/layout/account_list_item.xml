@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/dimen_12dp"
+    android:layout_marginRight="@dimen/dimen_12dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/nickname_tv"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/m_font_color_normal"
+            android:textSize="17sp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            >
+            <TextView
+                android:id="@+id/accountid_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/realname_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_999"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/edit_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/edit_account"
+        />
+
+</LinearLayout>

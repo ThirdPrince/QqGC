@@ -1,0 +1,11 @@
+{
+	"client":{
+		"cp_id":"260086000050303422",
+		"product_id":"9105385871708371245",
+		"client_id":"265832860286452736",
+		"client_secret":"94913D30DCC10C58F5BE31EC1D42A731D69E6DDB63B546C3BA009376EAE92924",
+		"app_id":"101567419",
+		"package_name":"com.yq.gc"
+	},
+	"configuration_version":"1.0"
+}

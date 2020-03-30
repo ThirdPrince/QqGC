@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@drawable/topbar_gradient_bg"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/feed_back_img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/dfk"
+            />
+
+        <TextView
+            android:id="@+id/feed_back_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/feed_back_img_bg"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_12dp"
+        android:layout_marginRight="@dimen/dimen_12dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/color_333"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:textSize="@dimen/main_page_txt_sp"
+        android:textColor="@color/color_999"/>
+
+    <LinearLayout
+        style="@style/task_info_linear"
+        >
+        <TextView
+            style="@style/task_info_left_tv"
+            android:text="任务开始时间"
+            />
+
+
+        <TextView
+            android:id="@+id/time_start_tv"
+            style="@style/task_info_right_tv"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/task_info_linear"
+        >
+        <TextView
+            style="@style/task_info_left_tv"
+            android:text="任务结束时间"
+            />
+
+        <TextView
+            android:id="@+id/time_end_tv"
+            style="@style/task_info_right_tv"
+            />
+    </LinearLayout>
+    <LinearLayout
+        style="@style/task_info_linear"
+        >
+        <TextView
+            style="@style/task_info_left_tv"
+            android:text="发布时间"
+            />
+
+        <TextView
+            android:id="@+id/task_create_time"
+            style="@style/task_info_right_tv"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/task_info_linear"
+        >
+        <TextView
+            style="@style/task_info_left_tv"
+            android:text="导控数量"
+            />
+
+        <TextView
+            android:id="@+id/control_num"
+            style="@style/task_info_right_tv"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/task_info_linear"
+        >
+        <TextView
+            style="@style/task_info_left_tv"
+            android:text="接收人员"
+
+            />
+
+        <TextView
+            android:id="@+id/received_tv"
+            style="@style/task_info_right_tv"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

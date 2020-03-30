@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/top_toolbar_search"/>
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/sliding_tab"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                app:tl_indicator_color="#FF63B8FF"
+                app:tl_textSelectColor="#FF63B8FF"
+                app:tl_textUnselectColor="@android:color/black"
+                app:tl_indicator_height="3dp"
+                app:tl_tab_space_equal="true"
+                app:tl_indicator_width="30dp"
+                app:tl_textsize="15sp"
+                app:tl_tab_padding="10dp"
+                />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    </android.support.v4.view.ViewPager>
+    <!-- TODO: Update blank fragment layout -->
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/room_tv_bg"
+
+             >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/room_num_tv_bg"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/room_num"
+                    style="@style/room_num_tv"
+                    android:layout_centerInParent="true"
+                    android:text="1901" />
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/dot_focus"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_toLeftOf="@+id/room_num"
+                    />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/people_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2人"
+            />
+
+
+</LinearLayout>
